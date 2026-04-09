@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import QuoteModal from "./QuoteModal";
 import { FiMenu, FiX } from "react-icons/fi";
+import Logo from "./Logo";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -32,11 +33,10 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
           <motion.div 
             whileHover={{ scale: 1.05 }}
-            className={`text-2xl font-extrabold tracking-tight ${scrolled ? "text-white" : "text-white"}`}
+            className={`transition-colors duration-300 ${scrolled ? "text-white" : "text-white"}`}
           >
-            <Link href="/" className="flex items-center gap-2">
-              <span className="text-primary-500 text-3xl">⚡</span>
-              Evolve <span className="text-primary-400">Energy</span>
+            <Link href="/" className="flex items-center">
+              <Logo className="w-40 md:w-48 h-auto text-white drop-shadow-md" />
             </Link>
           </motion.div>
 

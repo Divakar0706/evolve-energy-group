@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center text-white overflow-hidden" id="home">
+    <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-12 text-white overflow-hidden" id="home">
       
       {/* Background Image */}
       <Image
@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-slate-950/90"></div>
 
       {/* Content */}
-      <div className="relative text-center px-5 max-w-5xl mx-auto flex flex-col items-center mt-20 md:mt-0">
+      <div className="relative z-10 text-center px-5 max-w-5xl mx-auto flex flex-col items-center mt-6">
         
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

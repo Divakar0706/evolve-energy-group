@@ -1,10 +1,10 @@
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <!-- Left Crescent Cyan -->
-  <path d="M 50,80 C 10,80 10,20 50,20 C -5,25 -5,75 50,80 Z" fill="#1fa1c9" />
+<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left Crescent Dark/White -->
+  <path d="M 40 5 A 35 35 0 0 0 40 75 A 25 35 0 0 1 40 5 Z" fill="#3a3a3a" />
   
-  <!-- Right Crescent Dark -->
-  <path d="M 50,80 C 90,80 90,20 50,20 C 105,25 105,75 50,80 Z" fill="#3a3a3a" />
+  <!-- Right Crescent Blue -->
+  <path d="M 40 5 A 35 35 0 0 1 40 75 A 25 35 0 0 0 40 5 Z" fill="#1fa1c9" />
   
   <!-- Right Crescent Inner Orange -->
-  <path d="M 50,70 C 80,70 80,30 50,30 C 95,35 95,65 50,70 Z" fill="#f39200" />
+  <path d="M 40 12 A 28 28 0 0 1 40 68 A 18 28 0 0 0 40 12 Z" fill="#f39200" />
 </svg>

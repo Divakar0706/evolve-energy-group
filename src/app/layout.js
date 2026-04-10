@@ -8,8 +8,8 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "Evolve Energy Group",
-  description: "Energizing the Future with Solar Innovation",
+  title: "evolve Energy Group | Solar Innovation",
+  description: "Energizing the Future with Premium Solar Innovation",
 };
 
 export default function RootLayout({ children }) {

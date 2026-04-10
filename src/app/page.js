@@ -6,6 +6,7 @@ import Journey from "./Journey";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonals";
 import Projects from "@/components/Projects";
+import Clients from "@/components/Clients";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -21,6 +22,7 @@ export default function Home() {
       <WhyChooseUs />
       <Testimonials />
       <Projects />
+      <Clients />
       <Contact />
       <Footer />
     </main>

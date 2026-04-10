@@ -52,9 +52,9 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="relative bg-white/60 backdrop-blur-xl border border-white/80 p-8 rounded-3xl shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300"
+              className="relative cursor-pointer bg-white/60 backdrop-blur-xl border border-white/80 p-8 rounded-3xl shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-transform duration-300"
             >
-              <div className="absolute -top-5 left-8 w-12 h-12 bg-gradient-to-br from-primary-500 to-green-400 rounded-full flex items-center justify-center text-white shadow-lg">
+              <div className="absolute -top-5 left-8 w-12 h-12 bg-gradient-to-br from-primary-500 to-green-400 rounded-full flex items-center justify-center text-slate-900 shadow-lg">
                 <FaQuoteLeft size={20} />
               </div>
               

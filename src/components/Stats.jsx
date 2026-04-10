@@ -32,7 +32,7 @@ export default function Stats() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="p-8 bg-slate-50 border border-slate-200 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group"
+              className="p-8 cursor-pointer bg-slate-50 border border-slate-200 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group"
             >
               <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-br from-primary-500 to-green-400 mb-2 drop-shadow-sm group-hover:scale-105 transition-transform duration-300 inline-block">
                 {item.value}

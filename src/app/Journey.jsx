@@ -75,7 +75,7 @@ export default function Journey() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="relative bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm hover:shadow-2xl hover:shadow-primary-500/10 transition-all duration-300 border border-slate-100 dark:border-slate-700 group"
+              className="relative cursor-pointer bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm hover:shadow-2xl hover:shadow-primary-500/10 transition-all duration-300 border border-slate-100 dark:border-slate-700 group"
             >
               {/* Animated Glow on Hover */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>

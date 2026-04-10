@@ -16,6 +16,10 @@ export default function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
+    
+    // Immediately calculate state on mount to catch mid-page refreshes
+    handleScroll();
+    
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -27,7 +31,7 @@ export default function Navbar() {
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-slate-900/90 backdrop-blur-md shadow-lg py-3" : "bg-transparent py-5 md:py-6"
+          scrolled ? "bg-slate-950/90 backdrop-blur-xl shadow-xl py-3 border-b border-white/10" : "bg-transparent py-5 md:py-6"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
@@ -35,13 +39,13 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             className={`transition-colors duration-300 ${scrolled ? "text-white" : "text-white"}`}
           >
-            <Link href="/" className="flex items-center">
+            <a href="/" className="flex items-center">
               <Logo className="w-40 md:w-48 h-auto text-white drop-shadow-md" />
-            </Link>
+            </a>
           </motion.div>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-200">
+          <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-white">
             {["Home", "About", "Services", "Contact"].map((item) => (
               <li key={item}>
                 <Link 
@@ -58,7 +62,7 @@ export default function Navbar() {
           <div className="hidden md:block">
             <button
               onClick={() => setOpen(true)}
-              className="bg-primary-600 text-white px-6 py-2.5 rounded-full hover:bg-primary-500 transition-all duration-300 hover:shadow-[0_0_20px_-5px_rgba(34,197,94,0.5)] font-semibold"
+              className="cursor-pointer bg-accent-400 text-slate-900 px-6 py-2.5 rounded-full hover:bg-accent-500 transition-all duration-300 hover:shadow-[0_0_20px_-5px_rgba(245,153,40,0.5)] font-bold"
             >
               Get Quote
             </button>
@@ -81,7 +85,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-slate-950/95 backdrop-blur-xl flex flex-col items-center justify-center space-y-8"
+            className="fixed inset-0 z-40 bg-slate-950/95 backdrop-blur-3xl flex flex-col items-center justify-center space-y-8"
           >
             {["Home", "About", "Services", "Contact"].map((item) => (
               <Link 
@@ -95,7 +99,7 @@ export default function Navbar() {
             ))}
             <button
               onClick={() => { setOpen(true); setMobileMenuOpen(false); }}
-              className="mt-8 bg-primary-600 text-white px-8 py-3 rounded-full text-xl font-bold hover:bg-primary-500 shadow-lg shadow-primary-500/30"
+              className="mt-8 cursor-pointer bg-accent-400 text-slate-900 px-8 py-3 rounded-full text-xl font-extrabold hover:bg-accent-500 shadow-lg shadow-accent-500/30"
             >
               Get Quote
             </button>

@@ -26,10 +26,7 @@ export default function Navbar() {
 
   return (
     <>
-      <motion.nav 
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+      <nav 
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled ? "bg-slate-950/90 backdrop-blur-xl shadow-xl py-3 border-b border-white/10" : "bg-transparent py-5 md:py-6"
         }`}
@@ -76,7 +73,7 @@ export default function Navbar() {
             {mobileMenuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
-      </motion.nav>
+      </nav>
 
       {/* Mobile Menu Overlay */}
       <AnimatePresence>

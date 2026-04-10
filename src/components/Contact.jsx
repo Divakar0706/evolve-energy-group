@@ -53,7 +53,7 @@ export default function Contact() {
                 <FiMapPin />
               </div>
               <div className="min-w-0">
-                <h4 className="text-xs sm:text-sm font-bold text-slate-600 uppercase tracking-wider mb-1">Headquarters</h4>
+                <h3 className="text-xs sm:text-sm font-bold text-slate-600 uppercase tracking-wider mb-1">Headquarters</h3>
                 <p className="text-sm sm:text-base lg:text-xl font-bold text-slate-800 truncate">Chennai, India</p>
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function Contact() {
                 <FiPhone />
               </div>
               <div className="min-w-0">
-                <h4 className="text-xs sm:text-sm font-bold text-slate-600 uppercase tracking-wider mb-1">Phone</h4>
+                <h3 className="text-xs sm:text-sm font-bold text-slate-600 uppercase tracking-wider mb-1">Phone</h3>
                 <p className="text-sm sm:text-base lg:text-xl font-bold text-slate-800 truncate">+91 800 16 12345</p>
               </div>
             </div>
@@ -73,7 +73,7 @@ export default function Contact() {
                 <FiMail />
               </div>
               <div className="min-w-0 flex-1">
-                <h4 className="text-xs sm:text-sm font-bold text-slate-600 uppercase tracking-wider mb-1">Email Support</h4>
+                <h3 className="text-xs sm:text-sm font-bold text-slate-600 uppercase tracking-wider mb-1">Email Support</h3>
                 <p className="text-sm sm:text-base lg:text-xl font-bold text-slate-800 break-all sm:break-normal">info@evolveenergygroup.com</p>
               </div>
             </div>

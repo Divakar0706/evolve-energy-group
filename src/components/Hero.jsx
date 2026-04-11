@@ -37,10 +37,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold mt-4 leading-[1.15] md:leading-tight tracking-tight drop-shadow-2xl flex flex-col md:block items-center"
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold mt-4 leading-[1.15] md:leading-tight tracking-tight drop-shadow-2xl text-center"
         >
-          <span>Intelligent <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-200 to-primary-400">Solar.</span></span>
-          <span className="mt-1 md:mt-0">Infinite <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-500">Returns.</span></span>
+          <span className="block">Intelligent <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-200 to-primary-400">Solar.</span></span>
+          <span className="block mt-1 sm:mt-2">Infinite <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-500">Returns.</span></span>
         </motion.h1>
 
         <motion.p

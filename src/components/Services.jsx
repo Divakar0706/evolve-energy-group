@@ -57,7 +57,7 @@ export default function Services() {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className="bg-slate-50 border border-slate-100 p-8 rounded-3xl shadow-lg shadow-slate-200/40 hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 cursor-pointer group"
             >
-              <div className="text-slate-900 bg-primary-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-md shadow-primary-500/30 group-hover:scale-110 transition-transform duration-300 group-hover:rotate-3">
+              <div className="text-primary-600 bg-primary-50 w-16 h-16 rounded-[1.25rem] flex items-center justify-center mb-6 shadow-sm shadow-primary-500/10 group-hover:scale-110 transition-all duration-300 group-hover:-rotate-6 group-hover:bg-primary-100">
                 {service.icon}
               </div>
 

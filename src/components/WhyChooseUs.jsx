@@ -9,25 +9,33 @@ export default function WhyChooseUs() {
       title: "High-Quality Products",
       desc: "Durable and efficient solar systems built to last decades.",
       icon: <FaShieldAlt size={32} />,
-      color: "from-blue-500 to-cyan-400"
+      color: "from-primary-500 to-primary-400",
+      bgLight: "bg-primary-50 group-hover:bg-primary-100",
+      iconColor: "text-primary-600"
     },
     {
       title: "Affordable Solutions",
       desc: "Cost-effective solar options offering rapid ROI.",
       icon: <FaMoneyBillWave size={32} />,
-      color: "from-green-500 to-emerald-400"
+      color: "from-emerald-500 to-emerald-400",
+      bgLight: "bg-emerald-50 group-hover:bg-emerald-100",
+      iconColor: "text-emerald-600"
     },
     {
       title: "Sustainable Energy",
       desc: "Reduce carbon footprint with pristine clean energy.",
       icon: <FaLeaf size={32} />,
-      color: "from-accent-500 to-yellow-400"
+      color: "from-accent-500 to-accent-400",
+      bgLight: "bg-orange-50 group-hover:bg-orange-100",
+      iconColor: "text-accent-500"
     },
     {
       title: "After-Sales Support",
       desc: "Reliable, 24/7 service and maintenance commitment.",
       icon: <FaTools size={32} />,
-      color: "from-purple-500 to-indigo-400"
+      color: "from-primary-600 to-primary-500",
+      bgLight: "bg-primary-50 group-hover:bg-primary-100",
+      iconColor: "text-primary-600"
     },
   ];
 
@@ -63,9 +71,9 @@ export default function WhyChooseUs() {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className="group relative cursor-pointer bg-white border border-slate-100 shadow-xl hover:shadow-2xl p-8 rounded-2xl shadow-xl hover:bg-slate-50 transition-all duration-300 overflow-hidden text-left"
             >
-              <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${item.color} opacity-10 rounded-bl-full transition-transform duration-500 group-hover:scale-110`}></div>
+              <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${item.color} opacity-[0.08] rounded-bl-full transition-transform duration-500 group-hover:scale-110`}></div>
               
-              <div className={`w-16 h-16 rounded-xl flex items-center justify-center mb-6 bg-gradient-to-br ${item.color} text-slate-900 shadow-lg shadow-black/50 group-hover:-translate-y-1 transition-transform duration-300`}>
+              <div className={`w-16 h-16 rounded-[1.25rem] flex items-center justify-center mb-6 ${item.bgLight} ${item.iconColor} shadow-sm group-hover:-translate-y-1 group-hover:scale-110 transition-all duration-300`}>
                 {item.icon}
               </div>
 

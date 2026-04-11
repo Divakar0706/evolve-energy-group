@@ -45,7 +45,7 @@ export default function Journey() {
   };
 
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-20 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800" id="services">
+    <section className="py-24 px-6 md:px-12 lg:px-20 bg-slate-50 border-t border-b border-slate-100" id="journey">
       
       <div className="max-w-7xl mx-auto">
         <motion.div 
@@ -56,10 +56,10 @@ export default function Journey() {
           className="text-center mb-16"
         >
           <span className="text-primary-600 font-bold uppercase tracking-wider text-sm mb-2 block">Workflow</span>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white">
-            Customer <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-green-400">Journey</span>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900">
+            Customer <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-400">Journey</span>
           </h2>
-          <p className="mt-4 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">
+          <p className="mt-4 text-slate-600 max-w-2xl mx-auto text-lg">
             A simple, transparent, and hassle-free process from consultation to decades of clean energy savings.
           </p>
         </motion.div>
@@ -75,24 +75,24 @@ export default function Journey() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="relative cursor-pointer bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm hover:shadow-2xl hover:shadow-primary-500/10 transition-all duration-300 border border-slate-100 dark:border-slate-700 group"
+              className="relative cursor-pointer bg-white p-8 rounded-2xl shadow-[0_10px_30px_-15px_rgba(0,0,0,0.1)] hover:shadow-2xl hover:shadow-primary-500/15 transition-all duration-300 border border-slate-100 group"
             >
               {/* Animated Glow on Hover */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
 
               {/* Step Number & Icon */}
               <div className="flex items-center justify-between mb-6">
-                <div className="w-12 h-12 rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center text-primary-600 dark:text-primary-400 font-bold text-xl shadow-inner group-hover:scale-110 transition-transform duration-300">
+                <div className="w-12 h-12 rounded-full bg-primary-50 flex items-center justify-center text-primary-600 font-bold text-xl shadow-inner group-hover:scale-110 transition-transform duration-300">
                   {index + 1}
                 </div>
-                <FiCheckCircle className="text-2xl text-slate-300 dark:text-slate-600 group-hover:text-primary-500 transition-colors duration-300" />
+                <FiCheckCircle className="text-2xl text-slate-200 group-hover:text-primary-500 transition-colors duration-300" />
               </div>
 
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary-500 transition-colors duration-300">
+              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-primary-600 transition-colors duration-300">
                 {step.title}
               </h3>
 
-              <p className="text-slate-600 dark:text-slate-400 text-base leading-relaxed">
+              <p className="text-slate-600 text-base leading-relaxed">
                 {step.desc}
               </p>
             </motion.div>
